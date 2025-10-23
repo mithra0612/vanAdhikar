@@ -1,0 +1,62 @@
+/* Card utility classes for consistent styling */
+.card-scrollable-content {
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 4px;
+  scrollbar-width: thin;
+}
+
+.card-scrollable-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.card-scrollable-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.card-list-item {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+.card-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.card-list-item:last-child {
+  border-bottom: none;
+}
+
+.card-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.card-metric {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.02);
+  text-align: center;
+}
+
+.card-metric-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card-metric-label {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}

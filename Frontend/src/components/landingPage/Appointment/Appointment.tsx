@@ -1,0 +1,121 @@
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FiPhoneCall } from "react-icons/fi";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+
+const Appointment = () => {
+  return (
+    <section className="py-28 relative bg-[linear-gradient(to_bottom,_rgba(121,185,0,1)_40%,_rgba(255,255,255,1)_32%)] sm:bg-[linear-gradient(to_bottom,_rgba(121,185,0,1)_41.5%,_rgba(255,255,255,1)_32%)] md:bg-[linear-gradient(to_top,_rgba(255,255,255,1)_52.5%,_rgba(121,185,0,1)_48.5%)] lg:bg-[linear-gradient(to_right,_rgba(121,185,0,1)_50%,_rgba(255,255,255,1)_50%)] border-r-8 border-b-8 border-PrimaryColor-0 overflow-hidden">
+      <img src={"/images/appointment-shape.png"} className="absolute -left-2 -top-2 z-20" />
+      <div className="Container">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-40 md:gap-40 lg:gap-28 items-center">
+          <div className="relative text-center">
+            <img
+              src={"/images/appointment-shape2.png"}
+              className="absolute right-0 -top-20 animate-zoomInOut hidden 2xl:block"
+            />
+            <div className="w-[110px] h-[110px] text-white relative rounded-full flex justify-center items-center m-auto before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border before:text-white before:border-dashed before:border-white before:rounded-full before:animate-rotational">
+              <FiPhoneCall size={"50"} />
+            </div>
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-white mt-9 mb-11">
+              Contact Technical Support
+              <br />
+              for FRA Atlas System!
+            </h1>
+            <div className="inline-block">
+              <Link href={"/contact"} className="flex justify-center items-center">
+                <Button className="primary-btn2 !border-white !border">
+                  Contact Support
+                  <FaArrowRightLong size={"20"} />
+                </Button>
+              </Link>
+            </div>
+          </div>
+          <div className="mr-2">
+            <h2 className="font-AlbertSans font-bold text-3xl md:text-[40px] mb-11">
+              Request System Access
+            </h2>
+            <form action="#" method="post" className="flex flex-col gap-7">
+              <div className="flex flex-col md:flex-row gap-7">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Official Name*"
+                  required
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
+                />
+                <input
+                  type="text"
+                  name="designation"
+                  id="designation"
+                  placeholder="Designation*"
+                  required
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
+                />
+              </div>
+              <div className="flex flex-col md:flex-row gap-7">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Official Email*"
+                  required
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
+                />
+                <select
+                  name="state"
+                  id="state"
+                  required
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
+                >
+                  <option value="">Select State*</option>
+                  <option value="madhya-pradesh">Madhya Pradesh</option>
+                  <option value="tripura">Tripura</option>
+                  <option value="odisha">Odisha</option>
+                  <option value="telangana">Telangana</option>
+                </select>
+              </div>
+              <div className="flex flex-col md:flex-row gap-7">
+                <input
+                  type="text"
+                  name="department"
+                  id="department"
+                  placeholder="Department/Organization*"
+                  required
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
+                />
+                <select
+                  name="accessType"
+                  id="accessType"
+                  required
+                  className="border border-BorderColor2-0 rounded py-2 px-6 outline-none h-[56px] w-full"
+                >
+                  <option value="">Access Type*</option>
+                  <option value="admin">Admin Access</option>
+                  <option value="viewer">Viewer Access</option>
+                  <option value="analyst">Data Analyst</option>
+                  <option value="support">Technical Support</option>
+                </select>
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Purpose of Access Request..."
+                className="border border-BorderColor2-0 rounded py-2 px-6 outline-none resize-none h-[140px] w-full"
+              ></textarea>
+              <div className="inline-block">
+                <Button type="submit" className="primary-btn2">
+                  Submit Request
+                  <FaArrowRightLong size={"20"} />
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Appointment;

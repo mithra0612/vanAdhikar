@@ -1,0 +1,111 @@
+/* eslint-disable no-unused-vars */
+import { FaArrowRightLong } from "react-icons/fa6";
+import BlogCard from "./BlogCard";
+import Link from "next/link";
+
+const blogData = [
+  {
+    id: 1,
+    blogThumb: "/images/blog-thumb1.jpg",
+    thumbContent: "Environment",
+    blogDate: "24 Mar, 2024",
+    blogUrl: "/blog_details",
+    blogTitle: "Top 10 Recycling tips for Environment",
+    blogDesc:
+      "Competently cultivate worldwide to e-tailers professionally engineer high",
+    blogProfileIcon: "J",
+    blogProfileTitle: "John D. Alexon",
+    btnIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 2,
+    blogThumb: "/images/blog-thumb2.jpg",
+    thumbContent: "Environment",
+    blogDate: "24 Mar, 2024",
+    blogUrl: "/blog_details",
+    blogTitle: "How Every Individual Can Make a Difference",
+    blogDesc:
+      "Competently cultivate worldwide to e-tailers professionally engineer high",
+    blogProfileIcon: "A",
+    blogProfileTitle: "Anjelina Watson",
+    btnIcon: <FaArrowRightLong />,
+  },
+  {
+    id: 3,
+    blogThumb: "/images/blog-thumb3.jpg",
+    thumbContent: "Environment",
+    blogDate: "24 Mar, 2024",
+    blogUrl: "/blog_details",
+    blogTitle: "Innovations in Renewable Energy Technology",
+    blogDesc:
+      "Competently cultivate worldwide to e-tailers professionally engineer high",
+    blogProfileIcon: "D",
+    blogProfileTitle: "David Watson",
+    btnIcon: <FaArrowRightLong />,
+  },
+];
+
+const Blog = () => {
+  return (
+    <section className="py-2">
+      <div className="container mx-auto px-4 mt-10 sm:px-6 lg:px-8 max-w-7xl py-20">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:items-center">
+          <div>
+            <h5 className="font-AlbertSans font-medium text-PrimaryColor-0 flex items-center gap-2">
+              <img src={"/images/sub-title-shape.png"} draggable="false" />
+              LATEST BLOG
+            </h5>
+            <h1 className="font-AlbertSans font-bold text-[22px] leading-8 sm:text-[38px] sm:leading-[48px] md:text-[44px] md:leading-[54px] lg:text-[32px] lg:leading-[42px] xl:text-[40px] xl:leading-[50px] 2xl:text-[46px] 2xl:leading-[56px] text-HeadingColor-0 mt-5 mb-3">
+              Building a Greener Future <br />
+              Together Forever
+            </h1>
+          </div>
+          <div className="flex lg:justify-end">
+            <Link href={"/blog_grid"}>
+              <button className="primary-btn">
+                View All Blog
+                <img src={"/images/button-shape-1.png"} draggable="false" />
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="mt-[60px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            {blogData.map(
+              ({
+                id,
+                blogThumb,
+                thumbContent,
+                blogDate,
+                blogUrl,
+                blogTitle,
+                blogDesc,
+                blogProfileIcon,
+                blogProfileTitle,
+                btnIcon,
+              }) => {
+                return (
+                  <div key={id}>
+                    <BlogCard
+                      blogThumb={blogThumb}
+                      thumbContent={thumbContent}
+                      blogDate={blogDate}
+                      blogUrl={blogUrl}
+                      blogTitle={blogTitle}
+                      blogDesc={blogDesc}
+                      blogProfileIcon={blogProfileIcon}
+                      blogProfileTitle={blogProfileTitle}
+                      btnIcon={btnIcon}
+                    />
+                  </div>
+                );
+              }
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Blog;
