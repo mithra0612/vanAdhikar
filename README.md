@@ -1,6 +1,6 @@
-# FRA Atlas – AI-Powered WebGIS and Decision Support System
+# VanAdhikar – AI-Powered WebGIS and Decision Support System
 
-**FRA Atlas** is a comprehensive, AI-driven platform designed to revolutionize **Forest Rights Act (FRA)** implementation in India. It digitizes legacy claims data, provides real-time geospatial monitoring, maps community assets, and delivers personalized scheme recommendations to tribal communities, creating a **transparent and efficient rights recognition ecosystem**.
+**VanAdhikar** is a comprehensive, AI-driven platform designed to revolutionize **Forest Rights Act (FRA)** implementation in India. It digitizes legacy claims data, provides real-time geospatial monitoring, maps community assets, and delivers personalized scheme recommendations to tribal communities, creating a **transparent and efficient rights recognition ecosystem**.
 
 ---
 
