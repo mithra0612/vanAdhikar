@@ -122,60 +122,7 @@
 
 ---
 
-## **How to Run Locally**
+## **Author**
 
-Follow these steps to clone and run **FRA Atlas** on your local machine:
-
-### **Prerequisites:**
-- Node.js (v18 or higher)
-- PostgreSQL with PostGIS extension
-- Python 3.8+ (for ML pipelines)
-- Git
-
-### **1. Clone the Repository**
-```bash
-git clone https://github.com/your-username/fra-atlas.git
-cd fra-atlas
-```
-
-### **2. Install Dependencies**
-```bash
-npm install
-```
-
-### **3. Set Up Database**
-```bash
-# Create PostgreSQL database
-psql -U postgres -c "CREATE DATABASE fra_atlas;"
-
-# Enable PostGIS extension
-psql -U postgres -d fra_atlas -c "CREATE EXTENSION postgis;"
-
-# Run migrations
-npm run migrate
-```
-
-### **4. Configure Environment Variables**
-
-Create a `.env.local` file in the root directory:
-
-```env
-DATABASE_URL=postgresql://postgres:password@localhost:5432/fra_atlas
-NEXTAUTH_SECRET=your_nextauth_secret_key
-NEXTAUTH_URL=http://localhost:3000
-GOOGLE_EARTH_ENGINE_KEY=your_gee_api_key
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_token
-GEMINI_API_KEY=your_gemini_api_key
-NEXT_PUBLIC_MAPBOX_TOKEN=your_mapbox_access_token
-```
-
-### **5. Start the Development Server**
-```bash
-npm run dev
-```
-
-This starts the development server. By default, the app will be available at:
-```
-http://localhost:3000
-```
+- **Madhumithra**
+- [GitHub Repository](https://github.com/mithra0612/vanAdhikar/)
