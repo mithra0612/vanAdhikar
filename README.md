@@ -4,6 +4,15 @@
 
 ---
 
+## My Repository Contributions
+
+
+The following graph highlights my contribution activity to this collaborative repository.
+
+<img width="1200" height="256" alt="contributions" src="https://github.com/user-attachments/assets/6a753bdf-2aaa-4377-89cb-2b5cce957cee" />
+
+---
+
 ## **Key Features**:
 
 ### **1. AI-Powered Legacy Data Digitization:**
@@ -119,10 +128,3 @@
 
 ## **Live Project:**
 - **[Visit FRA Atlas Platform](https://dev-proto-1.vercel.app/)**
-
----
-
-## **Author**
-
-- **Madhumithra**
-- [GitHub Repository](https://github.com/mithra0612/vanAdhikar/)
