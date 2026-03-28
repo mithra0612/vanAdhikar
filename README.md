@@ -9,7 +9,7 @@
 
 The following graph highlights my contribution activity to this collaborative repository.
 
-<img width="1200" height="256" alt="contributions" src="https://github.com/user-attachments/assets/6a753bdf-2aaa-4377-89cb-2b5cce957cee" />
+<img width="545" height="269" alt="image" src="https://github.com/user-attachments/assets/17271adc-601f-4216-80a5-8dbe4ee72e38" />
 
 ---
 
